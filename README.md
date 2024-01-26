@@ -3,13 +3,13 @@
 Utilizando a biblioteca BeautifulSoup e requests para pegar o link da página e pegar o elementos necessário, consegui ter dados de valores das criptomoedas escolhidas por mim.
 
 # Buscando as linhas que contém os valores das cripto
-    while True:
-      sleep(3)
-      link = "https://coinmarketcap.com/"
-      requisicao = requests.get(link)
-      soup = BeautifulSoup(requisicao.text, 'html.parser')
-      tbody = soup.find('table')
-      linhas = tbody.find_all('tr')
+        while True:
+          sleep(3)
+          link = "https://coinmarketcap.com/"
+          requisicao = requests.get(link)
+          soup = BeautifulSoup(requisicao.text, 'html.parser')
+          tbody = soup.find('table')
+          linhas = tbody.find_all('tr')
       
 
     
